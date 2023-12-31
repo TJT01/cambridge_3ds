@@ -97,6 +97,7 @@ function love.draw()
 	love.graphics.draw(GLOBAL_CANVAS)
 end
 
+--[[
 function love.keypressed(key, scancode)
 	-- global hotkeys
 	if scancode == "f11" then
@@ -156,6 +157,7 @@ function love.keyreleased(key, scancode)
 		scene:onInputRelease({input=input_released, type="key", key=key, scancode=scancode})
 	end
 end
+--]]
 
 function love.joystickpressed(joystick, button)
 	local input_pressed = nil
@@ -275,7 +277,7 @@ function love.joystickhat(joystick, hat, direction)
 		last_hat_direction = ""
 	end
 end
-
+--[[
 function love.wheelmoved(x, y)
 	scene:onInputPress({input=nil, type="wheel", x=x, y=y})
 end
@@ -284,6 +286,7 @@ function love.resize(w, h)
 	GLOBAL_CANVAS:release()
 	GLOBAL_CANVAS = love.graphics.newCanvas(w, h)
 end
+--]]
 
 -- higher values of TARGET_FPS will make the game run "faster"
 -- since the game is mostly designed for 60 FPS

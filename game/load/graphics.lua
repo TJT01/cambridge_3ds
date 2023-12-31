@@ -4,7 +4,7 @@ named_backgrounds = {
 }
 current_playing_bgs = {}
 extended_bgs = {}
-image_formats = {".jpg", ".png"}
+image_formats = {".t3x"}
 bgpath = "res/backgrounds/"
 dir = love.filesystem.getDirectoryItems(bgpath)
 
@@ -113,52 +113,52 @@ end
 -- all the others are fine to use
 blocks = {
 	["2tie"] = {
-		R = love.graphics.newImage("res/img/s1.png"),
-		O = love.graphics.newImage("res/img/s3.png"),
-		Y = love.graphics.newImage("res/img/s7.png"),
-		G = love.graphics.newImage("res/img/s6.png"),
-		C = love.graphics.newImage("res/img/s2.png"),
-		B = love.graphics.newImage("res/img/s4.png"),
-		M = love.graphics.newImage("res/img/s5.png"),
-		W = love.graphics.newImage("res/img/s9.png"),
-		D = love.graphics.newImage("res/img/s8.png"),
-		F = love.graphics.newImage("res/img/s9.png"),
-		A = love.graphics.newImage("res/img/s8.png"),
-		X = love.graphics.newImage("res/img/s9.png"),
+		R = love.graphics.newImage("res/img/s1.t3x"),
+		O = love.graphics.newImage("res/img/s3.t3x"),
+		Y = love.graphics.newImage("res/img/s7.t3x"),
+		G = love.graphics.newImage("res/img/s6.t3x"),
+		C = love.graphics.newImage("res/img/s2.t3x"),
+		B = love.graphics.newImage("res/img/s4.t3x"),
+		M = love.graphics.newImage("res/img/s5.t3x"),
+		W = love.graphics.newImage("res/img/s9.t3x"),
+		D = love.graphics.newImage("res/img/s8.t3x"),
+		F = love.graphics.newImage("res/img/s9.t3x"),
+		A = love.graphics.newImage("res/img/s8.t3x"),
+		X = love.graphics.newImage("res/img/s9.t3x"),
 	},
 	["bone"] = {
-		R = love.graphics.newImage("res/img/bone.png"),
-		O = love.graphics.newImage("res/img/bone.png"),
-		Y = love.graphics.newImage("res/img/bone.png"),
-		G = love.graphics.newImage("res/img/bone.png"),
-		C = love.graphics.newImage("res/img/bone.png"),
-		B = love.graphics.newImage("res/img/bone.png"),
-		M = love.graphics.newImage("res/img/bone.png"),
-		W = love.graphics.newImage("res/img/bone.png"),
-		D = love.graphics.newImage("res/img/bone.png"),
-		F = love.graphics.newImage("res/img/bone.png"),
-		A = love.graphics.newImage("res/img/bone.png"),
-		X = love.graphics.newImage("res/img/bone.png"),
+		R = love.graphics.newImage("res/img/bone.t3x"),
+		O = love.graphics.newImage("res/img/bone.t3x"),
+		Y = love.graphics.newImage("res/img/bone.t3x"),
+		G = love.graphics.newImage("res/img/bone.t3x"),
+		C = love.graphics.newImage("res/img/bone.t3x"),
+		B = love.graphics.newImage("res/img/bone.t3x"),
+		M = love.graphics.newImage("res/img/bone.t3x"),
+		W = love.graphics.newImage("res/img/bone.t3x"),
+		D = love.graphics.newImage("res/img/bone.t3x"),
+		F = love.graphics.newImage("res/img/bone.t3x"),
+		A = love.graphics.newImage("res/img/bone.t3x"),
+		X = love.graphics.newImage("res/img/bone.t3x"),
 	},
 	["gem"] = {
-		R = love.graphics.newImage("res/img/gem1.png"),
-		O = love.graphics.newImage("res/img/gem3.png"),
-		Y = love.graphics.newImage("res/img/gem7.png"),
-		G = love.graphics.newImage("res/img/gem6.png"),
-		C = love.graphics.newImage("res/img/gem2.png"),
-		B = love.graphics.newImage("res/img/gem4.png"),
-		M = love.graphics.newImage("res/img/gem5.png"),
-		W = love.graphics.newImage("res/img/gem9.png"),
-		D = love.graphics.newImage("res/img/gem9.png"),
-		F = love.graphics.newImage("res/img/gem9.png"),
-		A = love.graphics.newImage("res/img/gem9.png"),
-		X = love.graphics.newImage("res/img/gem9.png"),
+		R = love.graphics.newImage("res/img/gem1.t3x"),
+		O = love.graphics.newImage("res/img/gem3.t3x"),
+		Y = love.graphics.newImage("res/img/gem7.t3x"),
+		G = love.graphics.newImage("res/img/gem6.t3x"),
+		C = love.graphics.newImage("res/img/gem2.t3x"),
+		B = love.graphics.newImage("res/img/gem4.t3x"),
+		M = love.graphics.newImage("res/img/gem5.t3x"),
+		W = love.graphics.newImage("res/img/gem9.t3x"),
+		D = love.graphics.newImage("res/img/gem9.t3x"),
+		F = love.graphics.newImage("res/img/gem9.t3x"),
+		A = love.graphics.newImage("res/img/gem9.t3x"),
+		X = love.graphics.newImage("res/img/gem9.t3x"),
 	},
 	["square"] = {
-		W = love.graphics.newImage("res/img/squares.png"),
-		Y = love.graphics.newImage("res/img/squareg.png"),
-		F = love.graphics.newImage("res/img/squares.png"),
-		X = love.graphics.newImage("res/img/squares.png"),
+		W = love.graphics.newImage("res/img/squares.t3x"),
+		Y = love.graphics.newImage("res/img/squareg.t3x"),
+		F = love.graphics.newImage("res/img/squares.t3x"),
+		X = love.graphics.newImage("res/img/squares.t3x"),
 	}
 }
 
@@ -190,13 +190,13 @@ for name, blockset in pairs(blocks) do
 end
 
 misc_graphics = {
-	frame = love.graphics.newImage("res/img/frame.png"),
-	ready = love.graphics.newImage("res/img/ready.png"),
-	go = love.graphics.newImage("res/img/go.png"),
-	select_mode = love.graphics.newImage("res/img/select_mode.png"),
-	strike = love.graphics.newImage("res/img/strike.png"),
-	santa = love.graphics.newImage("res/img/santa.png"),
-	icon = love.graphics.newImage("res/img/cambridge_transparent.png")
+	frame = love.graphics.newImage("res/img/frame.t3x"),
+	ready = love.graphics.newImage("res/img/ready.t3x"),
+	go = love.graphics.newImage("res/img/go.t3x"),
+	select_mode = love.graphics.newImage("res/img/select_mode.t3x"),
+	strike = love.graphics.newImage("res/img/strike.t3x"),
+	santa = love.graphics.newImage("res/img/santa.t3x"),
+	icon = love.graphics.newImage("res/img/cambridge_transparent.t3x")
 }
 
 -- utility function to allow any size background to be used

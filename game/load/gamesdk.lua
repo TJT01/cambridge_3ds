@@ -1,4 +1,4 @@
-
+--[[
 print("Loading Discord GameSDK...")
 DiscordGameSDK = {
 	loaded = false
@@ -11,3 +11,8 @@ if success then
 else
 	print("Discord GameSDK failed to load!")
 end
+--]]
+
+DiscordGameSDK = {
+	loaded = false
+}

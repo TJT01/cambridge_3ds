@@ -1,3 +1,4 @@
+--[[
 print("Loading discord RPC...")
 DiscordRPC = {
 	loaded = false
@@ -56,3 +57,8 @@ function DiscordRPC:update(newstuff)
 	for k, v in pairs(newstuff) do self.presence[k] = v end
 	if self.loaded then self.RPC.updatePresence(self.presence) end
 end
+--]]
+
+DiscordRPC = {
+	loaded = false
+}
